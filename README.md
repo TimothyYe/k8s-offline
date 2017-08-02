@@ -1,5 +1,4 @@
 # Kubernetes Offline
----
 
 Offline installation package for kubernetes.
 
