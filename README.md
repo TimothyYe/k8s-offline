@@ -10,7 +10,7 @@ The offline installer will install:
 
 * Docker (1.12.6)
 * All the kubernetes components
-* Kubernetes dashboard. The default node port for dashboard is: 31234
+* Kubernetes dashboard, with default node port:```31234```
 
 ## Requirement & Limitation
 
