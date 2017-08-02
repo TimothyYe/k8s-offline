@@ -25,7 +25,7 @@ The offline installer will install:
    URL: [https://pan.baidu.com/s/1mikM3Ao](https://pan.baidu.com/s/1mikM3Ao)
    Code: bvj5
 2. Copy it to the production server
-3. Go to the offline package directory, host it with a simple HTTP server:
+3. Go to the installer directory, host it with a simple HTTP server by Python:
 
 ```bash
 [root@master k8s-deploy-1.5]# python -m SimpleHTTPServer
