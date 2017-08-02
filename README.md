@@ -27,10 +27,11 @@ The offline installation package will install:
 2. Copy it to the production server
 3. Go to the offline package directory, host it with a simple HTTP server:
 
-    ```bash
+```bash
 [root@master k8s-deploy-1.5]# python -m SimpleHTTPServer
 Serving HTTP on 0.0.0.0 port 8000 ...
-    ```
+```
+
 ### Install K8S master
 
 1. Get the IP address of dispatch server, for example: 192.168.0.10
