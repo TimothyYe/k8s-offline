@@ -1,4 +1,4 @@
-# Kubernetes Offline
+# Kubernetes Offline Installer
 
 Offline installer for kubernetes.
 
