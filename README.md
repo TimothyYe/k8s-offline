@@ -2,6 +2,10 @@
 
 Offline installer for kubernetes.
 
+## Index
+[Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
+[Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
+
 ## Introduction
 
 This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5 & 1.6. It is useful for deploying K8S to __OFFLINE__ production environment.
