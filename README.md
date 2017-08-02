@@ -1,12 +1,12 @@
 # Kubernetes Offline
 
-Offline installation package for kubernetes.
+Offline installer for kubernetes.
 
 ## Introduction
 
-This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5 & 1.6. It is useful to deploy K8S to OFFLINE production environment.
+This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5 & 1.6. It is useful for deploying K8S to OFFLINE production environment.
 
-The offline installation package will install:
+The offline installer will install:
 
 * Docker (1.12.6)
 * All the kubernetes components
@@ -14,14 +14,14 @@ The offline installation package will install:
 
 ## Requirement & Limitation
 
-* These installation packages are __ONLY FOR CentOS__.
-* All these installation packages are installed & verified by: __CentOS Linux release 7.3.1611 (Core)__
-* Right now, all these offline packages only install K8S master for __SINGLE__ instance, K8S master HA is __NOT__ supported yet.
+* Offline installer is __ONLY FOR CentOS__.
+* All the installers are installed & verified by: __CentOS Linux release 7.3.1611 (Core)__
+* Right now, offline installer only installs K8S master for __SINGLE__ instance, K8S master HA is __NOT__ supported yet.
 
-## Install offline package for K8S 1.5
+## Offline installer for K8S 1.5
 
 ### Prepare the dispatch server
-1. Downlaod packages from 百度网盘:
+1. Downlaod installer from 百度网盘:
    URL: [https://pan.baidu.com/s/1mikM3Ao](https://pan.baidu.com/s/1mikM3Ao)
    Code: bvj5
 2. Copy it to the production server
@@ -57,9 +57,9 @@ Repeat this step if you want to setup multiple K8S nodes.
 
 ```http://(master or node IP):31234```
 
-## Install offline package for K8S 1.6
+## Offline installer for K8S 1.6
 
-Downlaod packages from 百度网盘:
+Downlaod installer from 百度网盘:
 URL: [https://pan.baidu.com/s/1jIHu7H0](https://pan.baidu.com/s/1jIHu7H0)  Code: 61b4
 
 Steps are the same with K8S 1.5, but you need to notice the differences:
