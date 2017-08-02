@@ -67,9 +67,9 @@ Steps are the same with K8S 1.5, but you need to notice the differences:
 * Remember to reload the shell after master installation is completed:  ```source ~/.bashrc```
 * To install K8S node, don't forget the port: ```6443```
 
-   ```bash
-   curl -L http://192.168.0.10:8000/install.sh |  bash -s join --token=f8c407.9aa4bb840dfe2da0 192.168.0.10:6443
-   ```
+```bash
+curl -L http://192.168.0.10:8000/install.sh |  bash -s join --token=f8c407.9aa4bb840dfe2da0 192.168.0.10:6443
+```
 
 
 
