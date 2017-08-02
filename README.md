@@ -2,8 +2,9 @@
 
 Offline installer for kubernetes.
 
-## Index
+## Navigation
 [Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
+
 [Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
 
 ## Introduction
