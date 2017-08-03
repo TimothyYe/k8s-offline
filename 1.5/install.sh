@@ -88,6 +88,7 @@ kube::load_images()
         pause-amd64_3.0
         kube-proxy-amd64_v1.5.1
         flannel-amd64_v0.7.0
+        kubernetes-dashboard-amd64_1.6.0
     )
 
     if [ $1 == "master" ]; then

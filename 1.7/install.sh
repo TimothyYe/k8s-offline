@@ -69,24 +69,24 @@ kube::load_images()
     mkdir -p /tmp/k8s
     
     master_images=(
-        kube-apiserver-amd64_v1.6.2
-        kube-controller-manager-amd64_v1.6.2
-        kube-scheduler-amd64_v1.6.2
-        kube-proxy-amd64_v1.6.2
+        kube-apiserver-amd64_v1.7.2
+        kube-controller-manager-amd64_v1.7.2
+        kube-scheduler-amd64_v1.7.2
+        kube-proxy-amd64_v1.7.2
         pause-amd64_3.0
-        k8s-dns-dnsmasq-nanny-amd64_1.14.1
-        k8s-dns-kube-dns-amd64_1.14.1
-        k8s-dns-sidecar-amd64_1.14.1
+        k8s-dns-dnsmasq-nanny-amd64_1.14.4
+        k8s-dns-kube-dns-amd64_1.14.4
+        k8s-dns-sidecar-amd64_1.14.4
         etcd_v3.0.17
-        flannel-amd64_v0.7.1
-        kubernetes-dashboard-amd64_1.6.2
+        flannel-amd64_v0.8.0
+        kubernetes-dashboard-amd64_1.6.3
     )
 
     node_images=(
         pause-amd64_3.0
-        kube-proxy-amd64_v1.6.2
-        flannel-amd64_v0.7.1
-        kubernetes-dashboard-amd64_1.6.2
+        kube-proxy-amd64_v1.7.2
+        flannel-amd64_v0.8.0
+        kubernetes-dashboard-amd64_1.6.3
     )
 
     if [ $1 == "master" ]; then
@@ -179,7 +179,7 @@ kube::master_up()
 
     # 这里一定要带上--pod-network-cidr参数，不然后面的flannel网络会出问题
     export KUBE_ETCD_IMAGE=gcr.io/google_containers/etcd-amd64:3.0.17
-    kubeadm init --kubernetes-version=v1.6.2 --pod-network-cidr=10.96.0.0/12
+    kubeadm init --kubernetes-version=v1.7.2 --pod-network-cidr=10.96.0.0/12
 
     # 使能master，可以被调度到
     # kubectl taint nodes --all dedicated-
@@ -191,7 +191,6 @@ kube::master_up()
     kubectl apply -f http://$HTTP_SERVER/network/kube-flannel.yml --namespace=kube-system
 
     #install dashboard
-    kubectl create -f http://$HTTP_SERVER/network/kubernetes-dashboard-rbac.yml
     kubectl create -f http://$HTTP_SERVER/network/kubernetes-dashboard.yml
 
     # show pods
@@ -215,7 +214,7 @@ kube::node_up()
 
     kube::config_firewalld
 
-    kubeadm join $@
+    kubeadm join --skip-preflight-checks $@
 }
 
 kube::tear_down()
