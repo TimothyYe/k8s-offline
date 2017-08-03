@@ -12,17 +12,17 @@ The offline installer will install:
 * All the kubernetes components
 * Kubernetes dashboard, with default node port:```31234```
 
-## Navigation
-
-[Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
-
-[Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
-
 ## Requirement & Limitation
 
 * Offline installer is __ONLY FOR CentOS__.
 * All the installers are installed & verified by: __CentOS Linux release 7.3.1611 (Core)__
 * Right now, offline installer only installs K8S master for __SINGLE__ instance, K8S master HA is __NOT__ supported yet.
+
+## Navigation
+
+[Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
+
+[Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
 
 ## Offline installer for K8S 1.5
 
