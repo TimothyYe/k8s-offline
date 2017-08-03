@@ -2,11 +2,6 @@
 
 Offline installer for kubernetes.
 
-## Navigation
-[Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
-
-[Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
-
 ## Introduction
 
 This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5 & 1.6. It is useful for deploying K8S to __OFFLINE__ production environment.
@@ -16,6 +11,12 @@ The offline installer will install:
 * Docker (1.12.6)
 * All the kubernetes components
 * Kubernetes dashboard, with default node port:```31234```
+
+## Navigation
+
+[Offline installer for K8S 1.5](#offline-installer-for-k8s-15)
+
+[Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
 
 ## Requirement & Limitation
 
