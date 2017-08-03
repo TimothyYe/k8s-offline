@@ -4,7 +4,7 @@ Offline installer for kubernetes.
 
 ## Introduction
 
-This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5 & 1.6. It is useful for deploying K8S to __OFFLINE__ production environment.
+This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-deploy), it provides offline installation solution for Kubernetes 1.5.1 & 1.6.2 & 1.7.2. It is useful for deploying K8S to __OFFLINE__ production environment.
 
 The offline installer will install:
 
@@ -24,7 +24,11 @@ The offline installer will install:
 
 [Offline installer for K8S 1.6](#offline-installer-for-k8s-16)
 
+[Offline installer for K8S 1.7](#offline-installer-for-k8s-17)
+
 ## Offline installer for K8S 1.5
+
+__Kubernetes Version: 1.5.1__
 
 ### Prepare the dispatch server
 1. Downlaod installer from 百度网盘:
@@ -65,6 +69,8 @@ Repeat this step if you want to setup multiple K8S nodes.
 
 ## Offline installer for K8S 1.6
 
+__Kubernetes Version: 1.6.2__
+
 Downlaod installer from 百度网盘:
 URL: [https://pan.baidu.com/s/1jIHu7H0](https://pan.baidu.com/s/1jIHu7H0)  Code: 61b4
 
@@ -77,6 +83,13 @@ Steps are the same with K8S 1.5, but you need to notice the differences:
 curl -L http://192.168.0.10:8000/install.sh |  bash -s join --token=f8c407.9aa4bb840dfe2da0 192.168.0.10:6443
 ```
 
+## Offline installer for K8S 1.7
 
+__Kubernetes Version: 1.7.2__
+
+Downlaod installer from 百度网盘:
+URL: [https://pan.baidu.com/s/1pLLUiSj](https://pan.baidu.com/s/1pLLUiSj)  Code: ye2k
+
+Steps are the same with K8S 1.6.
 
 
