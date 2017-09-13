@@ -21,7 +21,7 @@ This project is modified from [k8s-deploy](https://github.com/xiaoping378/k8s-de
 
 * Offline installer is __ONLY FOR CentOS__.
 * All the installers are installed & verified by: __CentOS Linux release 7.3.1611 (Core)__
-* Right now, offline installer only installs K8S master for __SINGLE__ instance, K8S master HA is __NOT__ supported yet.
+* Right now, offline installer only installs K8S master with __SINGLE__ instance, K8S master HA is __NOT__ supported yet.
 
 ## Navigation
 
