@@ -56,7 +56,7 @@ Serving HTTP on 0.0.0.0 port 8000 ...
    curl -L http://192.168.0.10:8000/install.sh | bash -s master
    ```
    
-3. When you see that "K8S master install finished!" remember the token output like this: "  kubeadm join --token f8c407.9aa4bb840dfe2da0 192.168.0.104"
+3. When you see that "K8S master install finished!" remember the token output like this: "  kubeadm join --token f8c407.9aa4bb840dfe2da0 192.168.0.10"
 
 ### Install K8S node
 
